@@ -1,0 +1,90 @@
+.navContainer {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    flex-direction: row;
+    text-transform: capitalize;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 16px;
+    margin-bottom: 50px;
+
+    &__kaplanicon {
+        display: block;
+        height: 28px;
+        width: 104px;
+        text-indent: -1000px;
+        overflow: hidden;
+        }
+        &__logout{
+        height: 18px;
+        font-weight: 700;
+      
+        }
+   
+}
+a {
+   text-decoration: none;
+ color: #000;
+
+}
+
+a:hover {
+  cursor: pointer;
+  color: blueviolet;
+}
+
+.bodyContainer{
+   float: right;
+   background-color:rgb(253, 253, 253);
+   width: 70%;
+   img{
+    margin: 10px 10px 10px 10px; 
+       }
+       button{
+        background-color: #7825ff;
+        color: #fff;
+        display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    }
+    &__head{
+        margin: 10px 10px 10px 10px; 
+        padding-left: 20px;
+      &__content{
+        color: #000;
+        font-size: 18px;
+        font-weight: bold;
+       
+      }  
+    }
+       }
+
+.noborder {
+    border: 1px solid white;
+}
+
+.border {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(120, 37, 255) 3px 0px inset;
+    margin-left: -2px !important;
+    border-width: 1px 1px 1px 0px;
+    border-style: solid solid solid;
+    border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(204, 204, 204);
+    border-image: initial;
+    border-left: 0px;
+}
+
+.active {
+    cursor: default;
+
+}

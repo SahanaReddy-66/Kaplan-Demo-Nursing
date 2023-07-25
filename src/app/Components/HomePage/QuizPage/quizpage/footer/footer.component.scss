@@ -1,0 +1,38 @@
+@mixin footerStyle {
+    border-radius: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 1.05rem 1.2rem;
+    font-weight: bolder;
+    font-family: "Open Sans",sans-serif;
+    &:hover {
+        color: yellow;
+    }
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background: #006daa;
+    display: flex;
+
+    &__quit {
+        @include footerStyle;
+        //float: left;
+        border-right: 2px solid #ffffff;
+    }
+
+    &__next {
+        @include footerStyle;
+        border-left: 2px solid #ffffff;
+        flex: 1;
+        display: flex;
+    }
+
+    &__center {
+        flex-grow: 20;
+    }
+}

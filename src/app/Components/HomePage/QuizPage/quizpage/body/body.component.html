@@ -1,0 +1,61 @@
+<div class="questionBody" [ngClass]="visible ? 'resize  ' : ''"  >
+    <div class="questionBody__img"><span><img src="./assets/arrow.svg" alt="ok"></span></div>
+    <div class="questionBody__body" >
+        <p>
+            The parents of the child diagonosed with hemophilia ask the nurde to explain the cause of the disease. Which
+            response by the nurse is best ?
+        </p>
+        <input type="radio" name="answer">
+        <label>1. "There is a 50% chance that the mother will pass the trait to each daughter"</label>
+        <br>
+        <input type="radio" name="answer">
+        <label for="">2."Both parents carry a recessive trait" </label>
+        <br>
+        <input type="radio" name="answer">
+        <label for="">3. "The mother trasnmits the gene to her son</label>
+        <br>
+        <input type="radio" name="answer">
+        <label for="">4. "The father transmits the gene to the son"</label>
+    </div>
+    <button class="button  " (click)="explain()" >
+
+        {{SeeExplination? "See Explination": "Hide Explination"}}</button>
+        <ng-container *ngIf="visible"  >
+           <app-explination class="stack stack__tabs stack--slide  "></app-explination>
+        </ng-container>
+</div>
+
+<!-- <div>
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side" position="end">
+        <app-explanation></app-explanation>
+    </mat-drawer>
+    <div class="example-sidenav-content">
+        <div class="questionBody">
+            <div class="questionBody__img"><span><img src="./assets/arrow.svg" alt="ok"></span></div>
+            <div class="questionBody__body">
+                <p>
+                    The parents of the child diagonosed with hemophilia ask the nurde to explain the cause of the
+                    disease. Which
+                    response by the nurse is best ?
+                </p>
+                <input type="radio" name="answer">
+                <label>1. "There is a 50% chance that the mother will pass the trait to each daughter"</label>
+                <br>
+                <input type="radio" name="answer">
+                <label for="">2."Both parents carry a recessive trait" </label>
+                <br>
+                <input type="radio" name="answer">
+                <label for="">3. "The mother trasnmits the gene to her son</label>
+                <br>
+                <input type="radio" name="answer">
+                <label for="">4. "The father transmits the gene to the son"</label>
+            </div>
+        </div>
+        <button class="button" mat-button (click)="drawer.toggle()" (click)="explain()">
+            {{SeeExplination? "See Explination": "Hide Explination"}}</button>
+
+    </div>
+</mat-drawer-container>
+
+</div> -->

@@ -1,0 +1,83 @@
+.loginCard {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 #e0e0e0, inset 0 0 0 2px #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    margin-top: 10%;
+
+    &__heading {
+        font-family: FranklinGothic, sans-serif;
+        font-weight: 400 px;
+        color: #000;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    &__textbox {
+        border-bottom: 1px solid #000;
+        background-color: transparent;
+        border-radius: 0;
+        border: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, .12);
+        color: #222121;
+        display: block;
+        font-size: 20px;
+        outline: none;
+        padding: 8px 0;
+        width: 75%;
+        border-bottom: 1pxpx solid #000;
+        margin: 30px 30px 30px 30px;
+    }
+    &__label{
+
+           font-size: 16px;
+       left: 29%;
+       line-height: 16px;
+       //pointer-events: none;
+       position: absolute;
+       top: 32%;
+       transition-duration: .35s;
+       transition-property: top,font-size,color;
+       transition-timing-function: cubic-bezier(.4,0,.2,1);
+ 
+    }
+
+    &__submit {
+       width: 75%;
+        margin-top: 24px;
+        margin-bottom: 50px;
+        background-color: #7825ff;
+        border-radius: 4px;
+        border: 2px solid transparent;
+        cursor: pointer;
+        line-height: 3;
+        color: white;
+        margin: 30px;
+
+
+    }
+
+    input {
+        border-bottom: 1px solid #000;
+    }
+ 
+}
+input.ng-touched{
+   border-bottom: 1px solid red;
+}
+
+input.ng-touched.ng-invalid {
+   border-bottom: 2px solid red;
+ }
+  .invalid-feedback {
+   margin-left: 30px;
+   color: red;
+ }
+
+ input:focus {
+   border-bottom: 2px solid blue !important;
+ }
+

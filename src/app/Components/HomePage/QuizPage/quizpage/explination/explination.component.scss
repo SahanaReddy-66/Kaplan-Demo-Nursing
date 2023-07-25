@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+
+
+    .explain {
+
+        margin-left: 10px;
+        margin-top: 20px;
+        flex: 1;
+
+        &__title {
+            display: inline;
+        }
+
+        &__feedback {
+            color: #005de8;
+            cursor: pointer;
+            text-decoration: underline;
+            font-size: 13px;
+            font-weight: normal;
+            text-transform: none;
+            padding: 0;
+            border-radius: 0;
+        }
+    }
+
+   
+}
+.remediate {
+    margin-top: 20px;
+    background-color: #005de8;
+    padding: 1.2rem 2.4rem;
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5rem;
+    text-transform: uppercase;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }

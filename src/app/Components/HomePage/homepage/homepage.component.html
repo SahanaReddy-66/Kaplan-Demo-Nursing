@@ -1,0 +1,20 @@
+<div class="navContainer" >
+    <div> 
+      <img class="navContainer__kaplanicon" src="https://atom-web-prod-ktp-retail.kaptest.com/courseware/0da8cc9b362103b6cd372f0bec61a9ea/images/logos/logo.svg" 
+      alt=""></div>
+   <div class="study"> <a href=""> Study Plan</a></div>
+   <div><a href="">NCLEX QBank</a></div>
+   <div><a href="">Focused Review</a></div>
+   <div><a href="">Overall Performance</a></div>
+   <div><a href="">Resources</a></div>
+   <div> <span (click)="logout()" class="logout"><img src="./assets/logout-8.svg" alt="logout" class="navContainer__logout"></span></div>
+  
+</div>
+<div class="bodyContainer">
+<img src="https://atom-global-nonprod-ktp-nursing.qa.kaptest.com/images/nclex-get-started.svg" alt="">
+<div [ngClass]="start? 'border':'noborder'" class="bodyContainer__head">
+   <p  (click)="startButton()" class="bodyContainer__head__content" > Take test on - Online Spelling Bee</p>
+   
+   <div *ngIf="start" class="assignment"><button (click)="navigateToStartQuiz()">Start Quiz</button></div>
+</div>
+</div>
